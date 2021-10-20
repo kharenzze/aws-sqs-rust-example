@@ -81,7 +81,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "aws-sdk-dynamodb"
+name = "aws-sdk-sqs"
 version = "0.0.22-alpha"
 source = "git+https://github.com/awslabs/aws-sdk-rust?tag=v0.0.22-alpha#6c874ba3c63387254ecd00d651fe04c367070132"
 dependencies = [
@@ -91,11 +91,11 @@ dependencies = [
  "aws-sig-auth",
  "aws-smithy-client",
  "aws-smithy-http",
- "aws-smithy-json",
+ "aws-smithy-query",
  "aws-smithy-types",
+ "aws-smithy-xml",
  "aws-types",
  "bytes",
- "fastrand",
  "http",
 ]
 
@@ -253,7 +253,7 @@ name = "aws-sqs-rust-example"
 version = "0.1.0"
 dependencies = [
  "aws-config",
- "aws-sdk-dynamodb",
+ "aws-sdk-sqs",
  "tokio",
 ]
 
